@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1>Formulario Ingreso Doctores</h1></div>
+        
+        <form action="index.html" method="post"> <!--aqui cambien index.jsp por index.html-->
+        <table>
+            <tr>
+                <th>Codigo:</th>
+                <td><input type="text" name="codigo" size="10" required></td>
+            </tr>
+            <tr>
+                <th>Nombre:</th>
+                <td><input type="text" name="nombre" size="20" required></td>
+            </tr>
+            <tr>
+                <th>Apellido:</th>
+                <td><input type="text" name="apellido" size="20" required></td>
+            </tr>
+            <tr>
+                <th>Direccion:</th>
+                <td><input type="text" name="direccion" size="30" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <h1>Buscar Doctor</h1>
+    <form action="index.html" method="post"> <!--aqui cambien index.jsp por index.html-->
+        <table>
+            <tr>
+                <th>Codigo:</th>
+                <td><input type="text" name="codigo" size="10" requerided></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Buscar"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservice.service.cl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.service.cl/">
+
+<xs:element name="buscardoctor" type="tns:buscardoctor" />
+
+<xs:element name="buscardoctorResponse" type="tns:buscardoctorResponse" />
+
+<xs:element name="consultardoctor" type="tns:consultardoctor" />
+
+<xs:element name="consultardoctorResponse" type="tns:consultardoctorResponse" />
+
+<xs:element name="ingresardoctor" type="tns:ingresardoctor" />
+
+<xs:element name="ingresardoctorResponse" type="tns:ingresardoctorResponse" />
+
+<xs:complexType name="ingresardoctor">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="telefono" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresardoctorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultardoctor">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="consultardoctorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:doctores" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="doctores">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="telefono" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscardoctor">
+<xs:sequence>
+<xs:element name="codigo" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscardoctorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
